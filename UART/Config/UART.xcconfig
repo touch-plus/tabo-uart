@@ -1,0 +1,10 @@
+//
+//  UART.xcconfig
+//  UART
+//
+//  Created by kasuhisa on 2016/10/07.
+//  Copyright © 2016年 Bascule Inc. All rights reserved.
+//
+
+SWIFT_VERSION = 4.0
+DEVELOPMENT_TEAM = 97XN82P8E7

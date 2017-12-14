@@ -1,0 +1,11 @@
+framework module UART {
+  umbrella header "UART.h"
+
+  export *
+  module * { export * }
+}
+
+module UART.Swift {
+    header "UART-Swift.h"
+    requires objc
+}

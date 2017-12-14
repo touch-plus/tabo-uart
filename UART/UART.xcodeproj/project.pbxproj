@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		ACD4658D1C37C4A400489D23 /* UART-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ACD4658E1C37C4A400489D23 /* Build configuration list for PBXAggregateTarget "UART-Universal" */;
+			buildPhases = (
+				ACD465911C37C4B000489D23 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "UART-Universal";
+			productName = "UART-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		ACACC5E61C5FB63E00338EE1 /* UARTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5E51C5FB63E00338EE1 /* UARTLogger.swift */; };
+		ACACC5EC1C5FC30600338EE1 /* UARTDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5EB1C5FC30600338EE1 /* UARTDevice.swift */; };
+		ACACC5EE1C5FC39600338EE1 /* UARTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5ED1C5FC39600338EE1 /* UARTDelegate.swift */; };
+		ACACC5F01C5FC3F400338EE1 /* UARTCentralState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5EF1C5FC3F400338EE1 /* UARTCentralState.swift */; };
+		ACACC5F21C5FC4A700338EE1 /* UARTDeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACC5F11C5FC4A700338EE1 /* UARTDeviceDelegate.swift */; };
+		ACE73D431B981331000D916D /* UART.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE73D421B981331000D916D /* UART.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACE73D5A1B981340000D916D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE73D591B981340000D916D /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		ACE73D5E1B9813F3000D916D /* CoreBluetoothExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE73D5B1B9813F3000D916D /* CoreBluetoothExtension.swift */; };
+		ACE73D601B9813F3000D916D /* UART.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE73D5D1B9813F3000D916D /* UART.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC0F91C51DA7550800ED2EF2 /* UART.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UART.xcconfig; sourceTree = "<group>"; };
+		AC0F91C61DA7559D00ED2EF2 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		AC0F91C71DA755AD00ED2EF2 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		ACACC5E51C5FB63E00338EE1 /* UARTLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UARTLogger.swift; sourceTree = "<group>"; };
+		ACACC5EB1C5FC30600338EE1 /* UARTDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UARTDevice.swift; sourceTree = "<group>"; };
+		ACACC5ED1C5FC39600338EE1 /* UARTDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UARTDelegate.swift; sourceTree = "<group>"; };
+		ACACC5EF1C5FC3F400338EE1 /* UARTCentralState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UARTCentralState.swift; sourceTree = "<group>"; };
+		ACACC5F11C5FC4A700338EE1 /* UARTDeviceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UARTDeviceDelegate.swift; sourceTree = "<group>"; };
+		ACE73D3D1B981331000D916D /* UART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE73D411B981331000D916D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE73D421B981331000D916D /* UART.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UART.h; sourceTree = "<group>"; };
+		ACE73D591B981340000D916D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		ACE73D5B1B9813F3000D916D /* CoreBluetoothExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreBluetoothExtension.swift; sourceTree = "<group>"; };
+		ACE73D5D1B9813F3000D916D /* UART.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UART.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE73D391B981331000D916D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE73D5A1B981340000D916D /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0F91C31DA7547400ED2EF2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AC0F91C51DA7550800ED2EF2 /* UART.xcconfig */,
+				AC0F91C61DA7559D00ED2EF2 /* Debug.xcconfig */,
+				AC0F91C71DA755AD00ED2EF2 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		ACE73D331B981331000D916D = {
+			isa = PBXGroup;
+			children = (
+				AC0F91C31DA7547400ED2EF2 /* Config */,
+				ACE73D591B981340000D916D /* CoreBluetooth.framework */,
+				ACE73D3F1B981331000D916D /* UART */,
+				ACE73D3E1B981331000D916D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE73D3E1B981331000D916D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE73D3D1B981331000D916D /* UART.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE73D3F1B981331000D916D /* UART */ = {
+			isa = PBXGroup;
+			children = (
+				ACE73D5B1B9813F3000D916D /* CoreBluetoothExtension.swift */,
+				ACE73D5D1B9813F3000D916D /* UART.swift */,
+				ACACC5EB1C5FC30600338EE1 /* UARTDevice.swift */,
+				ACACC5F11C5FC4A700338EE1 /* UARTDeviceDelegate.swift */,
+				ACACC5EF1C5FC3F400338EE1 /* UARTCentralState.swift */,
+				ACACC5E51C5FB63E00338EE1 /* UARTLogger.swift */,
+				ACACC5ED1C5FC39600338EE1 /* UARTDelegate.swift */,
+				ACE73D421B981331000D916D /* UART.h */,
+				ACE73D401B981331000D916D /* Supporting Files */,
+			);
+			path = UART;
+			sourceTree = "<group>";
+		};
+		ACE73D401B981331000D916D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACE73D411B981331000D916D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ACE73D3A1B981331000D916D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE73D431B981331000D916D /* UART.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ACE73D3C1B981331000D916D /* UART */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE73D531B981332000D916D /* Build configuration list for PBXNativeTarget "UART" */;
+			buildPhases = (
+				ACE73D381B981331000D916D /* Sources */,
+				ACE73D391B981331000D916D /* Frameworks */,
+				ACE73D3A1B981331000D916D /* Headers */,
+				ACE73D3B1B981331000D916D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UART;
+			productName = UART;
+			productReference = ACE73D3D1B981331000D916D /* UART.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE73D341B981331000D916D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Bascule Inc.";
+				TargetAttributes = {
+					ACD4658D1C37C4A400489D23 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ACE73D3C1B981331000D916D = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 97XN82P8E7;
+					};
+				};
+			};
+			buildConfigurationList = ACE73D371B981331000D916D /* Build configuration list for PBXProject "UART" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACE73D331B981331000D916D;
+			productRefGroup = ACE73D3E1B981331000D916D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE73D3C1B981331000D916D /* UART */,
+				ACD4658D1C37C4A400489D23 /* UART-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE73D3B1B981331000D916D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACD465911C37C4B000489D23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE73D381B981331000D916D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACACC5EE1C5FC39600338EE1 /* UARTDelegate.swift in Sources */,
+				ACE73D5E1B9813F3000D916D /* CoreBluetoothExtension.swift in Sources */,
+				ACACC5F21C5FC4A700338EE1 /* UARTDeviceDelegate.swift in Sources */,
+				ACE73D601B9813F3000D916D /* UART.swift in Sources */,
+				ACACC5EC1C5FC30600338EE1 /* UARTDevice.swift in Sources */,
+				ACACC5F01C5FC3F400338EE1 /* UARTCentralState.swift in Sources */,
+				ACACC5E61C5FB63E00338EE1 /* UARTLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ACD4658F1C37C4A400489D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0F91C61DA7559D00ED2EF2 /* Debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "";
+			};
+			name = Debug;
+		};
+		ACD465901C37C4A400489D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0F91C71DA755AD00ED2EF2 /* Release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "";
+			};
+			name = Release;
+		};
+		ACE73D511B981332000D916D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0F91C51DA7550800ED2EF2 /* UART.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACE73D521B981332000D916D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0F91C51DA7550800ED2EF2 /* UART.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACE73D541B981332000D916D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0F91C61DA7559D00ED2EF2 /* Debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 97XN82P8E7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = UART/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.bascule.ios.UART;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		ACE73D551B981332000D916D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0F91C71DA755AD00ED2EF2 /* Release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 97XN82P8E7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = UART/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.bascule.ios.UART;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACD4658E1C37C4A400489D23 /* Build configuration list for PBXAggregateTarget "UART-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD4658F1C37C4A400489D23 /* Debug */,
+				ACD465901C37C4A400489D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE73D371B981331000D916D /* Build configuration list for PBXProject "UART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE73D511B981332000D916D /* Debug */,
+				ACE73D521B981332000D916D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE73D531B981332000D916D /* Build configuration list for PBXNativeTarget "UART" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE73D541B981332000D916D /* Debug */,
+				ACE73D551B981332000D916D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACE73D341B981331000D916D /* Project object */;
+}
